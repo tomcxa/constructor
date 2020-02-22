@@ -3,13 +3,9 @@
 // TODO: write your code here
 export function Character(name, type) {
     try {
-        // const types = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
         if (typeof name !== 'string' || (name.length < 2 || name.length > 10)) {
             throw new Error('Зашкварное имя, голубчик');
         }
-        // if (typeof type !== 'string' || !(types.some((el) => el === type))) {
-        //     throw new Error('Зашкварный тип, голубчик');
-        // }
         this.name = name;
         this.type = type;
         this.health = 100;
